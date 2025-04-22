@@ -1,0 +1,10 @@
+{
+    "model": "2D",
+    "type": "Квардрат",
+    "width": "400",
+    "height": "300",
+    "length": null,
+    "radius1": null,
+    "radius2": null,
+    "category": "Примитив"
+}

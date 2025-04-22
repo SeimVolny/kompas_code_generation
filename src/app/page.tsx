@@ -1,3 +1,8 @@
+import { PickerWrapper } from "@/components";
 export default function Home() {
-    return <div></div>;
+    return (
+        <main className="page">
+            <PickerWrapper />
+        </main>
+    );
 }

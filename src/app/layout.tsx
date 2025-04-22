@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "@/styles/index.css";
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
+import { montserrat } from "@/app/fonts";
 
 export const metadata: Metadata = {
     title: "Kompas Code Generation",
@@ -24,9 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ru">
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>
-                {children}
-            </body>
+            <body className={`${montserrat.className}`}>{children}</body>
         </html>
     );
 }
