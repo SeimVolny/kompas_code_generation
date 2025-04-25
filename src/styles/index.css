@@ -94,6 +94,13 @@
     text-align: center;
 }
 
+.model__code {
+    background-color: #111;
+    padding: 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+
 .model__picker__types {
     display: flex;
     justify-content: space-around;
