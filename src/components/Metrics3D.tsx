@@ -56,7 +56,7 @@ export const Metrics3D: FC<Metrics3DProps> = ({}) => {
                     title={"Сложные фигуры"}
                 />
             </div>
-            <h1 className="model__picker__title">Укажите параметры модели</h1>
+            <h1 className="model__picker__title">Укажите тип фигуры</h1>
             <div className="model__picker__types">
                 {category === "Примитив" && (
                     <>

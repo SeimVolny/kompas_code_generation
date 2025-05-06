@@ -99,6 +99,9 @@
     padding: 20px;
     color: #fff;
     line-height: 1.5;
+    white-space: pre-wrap;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 .model__picker__types {

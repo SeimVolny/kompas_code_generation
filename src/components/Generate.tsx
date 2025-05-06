@@ -9,7 +9,15 @@ export const Generate: FC = () => {
 
     const fetchCode = async (prompt: string) => {
         try {
-            const response = await fetch("http://127.0.0.1:8000/code");
+            const response = await fetch("http://127.0.0.1:8000/code",{
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    prompt: prompt
+                }),
+            });
             const data =await response.json();
             setData(data);
         } catch (e) {
@@ -55,7 +63,7 @@ export const Generate: FC = () => {
 
     return (
         <div className="generate">
-            {!error && data && <p className="model__code">{data.message}</p>}
+            {!error && data && <p className="model__code" >{data.message}</p>}
             {!error && !data &&
                 <>
                 <h1 className="model__picker__title">Происходит генерация кода</h1>
